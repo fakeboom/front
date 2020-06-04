@@ -1,8 +1,8 @@
 import React from 'react';
-
+import Back from "../image/backindex.jpg";
 const Footer = () => {
   return (
-    <div style={{height: 70, background: 'linear-gradient(0deg,#402cff,#6a6cff)'}}>
+      <div style={{ height: 70, backgroundImage: `url(${Back})` }}>
     </div>
   );
 };

@@ -4,17 +4,17 @@ import {Redirect} from 'react-router-dom';
 
 function CheckUser(Component, role=null, change=true) {
   class _CheckUser extends React.Component {
-    render() {
+      render() {
       if (role === null && this.props.role === null) {
         return <Component/>;
-      } else if (role === 'user' && this.props.role !== null) {
+      } else if (role === 'city' && this.props.role === 'city') {
         return <Component/>;
-      } else if (role === 'doctor' && this.props.role === 'doctor') {
+      } else if (role === 'institution' && this.props.role === 'institution') {
         return <Component/>;
-      } else if (role === 'examiner' && this.props.role === 'examiner') {
+      } else if (role === 'expert' && this.props.role === 'expert' ) {
         return <Component/>;
-      } else if (role === 'patient' && (this.props.role === 'female' || this.props.role === 'male')) {
-        return <Component/>;
+      } else if (role === 'admin' && this.props.role === 'admin') {
+          return <Component />;
       } else if (change) {
         return <Redirect to={'/'}/>;
       } else {

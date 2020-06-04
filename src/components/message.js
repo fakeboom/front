@@ -1,16 +1,15 @@
 import React from 'react';
 import {Box, Flex} from '@rebass/grid';
 
-import messageLeft from '../image/message-left.png';
+
 import messageRight from '../image/message-right.png';
 
 export default ({content, title='消息', onClose}) => {
   return (
       <Flex style={{height: '100vh', width: '100vw', position: 'fixed', backgroundColor: 'rgba(0,0,0,0.3)', top: 0, left: 0, zIndex: 100}}>
-        <Box style={{width: 400, height: 270, borderRadius: 15, margin: '20vh auto 0', backgroundColor: '#5555FF'}}>
+          <Box style={{ width: 270, height: 150, borderRadius: 15, margin: '20vh auto 0', backgroundColor: 'rgb(85, 192, 255)'}}>
           <Flex mt={1}>
             <Box ml={2} >
-              <img src={messageLeft} alt='' style={{width: 15}}/>
             </Box>
             <Box ml={1}>
               <span style={{color: 'white', fontSize: 'small'}}>消息</span>

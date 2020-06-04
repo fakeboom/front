@@ -3,28 +3,29 @@ import {Flex, Box} from '@rebass/grid';
 import Logo from '../../components/logo';
 import Login from './login';
 import Signup from './signup';
-import backTop from '../../image/home-auth-background-top.png';
-import backBottom from '../../image/home-auth-background-bottom.png';
-import backChild from '../../image/home-auth-background-child.png';
 import Button from "../../components/button";
+import Back from "../../image/backindex.jpg";
 
 class Home extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {signup: 0};
+      this.state = {
+          signup: 0
+      };
   }
 
-  render() {
+    render() {
+        console.log("here5");
     return (
       <div style={{
         height: '100%',
         width: '100%',
         overflow: 'auto',
-        backgroundImage: `url(${backTop}), url(${backBottom}), url(${backChild}), linear-gradient(180deg,#402cff,#7a8aff)`,
-        backgroundRepeat: 'no-repeat',
+            backgroundRepeat: 'no-repeat',
+            backgroundImage: `url(${Back})` ,
         backgroundPosition: `left top, right bottom, left bottom`,
         backgroundAttachment: 'fixed, fixed, fixed, fixed',
-        backgroundSize: `auto 45%, auto 50%, auto 80%, cover`
+        backgroundSize: `cover`
       }}>
         <Flex>
           <Box style={{marginTop: '5vh', marginLeft: 'auto', marginRight: '150px'}}>

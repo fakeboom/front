@@ -7,7 +7,7 @@ import './index.css';
 import Root from './router';
 import rootReducer from './reducers';
 
-import * as serviceWorker from './serviceWorker';
+//import * as serviceWorker from './serviceWorker';
 
 const store = createStore(persistReducer({ key: 'root', storage, whitelist: ['user'] }, rootReducer));
 const persistor = persistStore(store);
@@ -18,4 +18,4 @@ render(<Root store={store} persistor={persistor} />, document.getElementById('ro
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+//serviceWorker.unregister();

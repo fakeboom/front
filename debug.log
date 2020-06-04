@@ -1,0 +1,6 @@
+[0506/045839.422:ERROR:process_info.cc(359)] UncheckedAllocate
+[0506/050254.897:ERROR:process_info.cc(359)] UncheckedAllocate
+[0506/050649.297:ERROR:process_info.cc(359)] UncheckedAllocate
+[0506/050651.768:ERROR:process_info.cc(359)] UncheckedAllocate
+[0506/050651.794:ERROR:filesystem_win.cc(148)] DeleteFile C:\Users\lizidreamer\AppData\Local\Google\Chrome\User Data\Crashpad\reports\586bc363-071e-48e7-93bf-6c13ab67bb27.dmp: 另一个程序正在使用此文件，进程无法访问。 (0x20)
+[0518/221106.561:ERROR:process_info.cc(359)] UncheckedAllocate
